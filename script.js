@@ -132,13 +132,13 @@ function rentCar(carName, price) {
     const confirmation = confirm(
         `Car: ${carName}\n` +
         `Rental Period: ${days} days\n` +
-        `Daily Rate: $${price}\n` +
-        `Total Cost: $${totalPrice}\n\n` +
+        `Daily Rate: RS${price}\n` +
+        `Total Cost: RS${totalPrice}\n\n` +
         `Would you like to proceed with this rental?`
     );
     
     if (confirmation) {
-        showNotification(`Booking confirmed for ${carName}! Total: $${totalPrice}`, 'success');
+        showNotification(`Booking confirmed for ${carName}! Total: RS${totalPrice}`, 'success');
         
         // Simulate booking process
         setTimeout(() => {
